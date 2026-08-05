@@ -1,21 +1,20 @@
 /* ===========================================================
    Taroma Koshida — site stylesheet
-   Palette: tropical dusk. Deep teal night, sand, sunset coral,
-   muted gold, sage-green rhythm line.
+   Palette: soft tropical, pale cream / coral / sage
    =========================================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,500&family=Work+Sans:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap');
 
 :root{
-  --bg-deep:   #12302B;
-  --bg-panel:  #1B3F38;
-  --bg-panel-2:#234A41;
-  --sand:      #F3E9D2;
-  --sand-dim:  #C9BEA4;
-  --coral:     #E8734A;
-  --gold:      #D9A441;
-  --sage:      #7FA98C;
-  --line:      rgba(243,233,210,0.14);
+  --bg-deep:   #F7F1E6;
+  --bg-panel:  #FFFDF8;
+  --bg-panel-2:#EFE5D2;
+  --sand:      #4A3F33;
+  --sand-dim:  #8C7C67;
+  --coral:     #E8916D;
+  --gold:      #D9B36B;
+  --sage:      #8FB39D;
+  --line:      rgba(74,63,51,0.14);
 
   --display: 'Fraunces', serif;
   --body: 'Work Sans', sans-serif;
@@ -64,7 +63,7 @@ h1,h2,h3{
   position: sticky;
   top:0;
   z-index: 50;
-  background: rgba(18,48,43,0.88);
+  background: rgba(247,241,230,0.92);
   backdrop-filter: blur(6px);
   border-bottom: 1px solid var(--line);
 }
@@ -126,7 +125,7 @@ nav.mainnav a.active::after{
   nav.mainnav ul{ flex-direction:column; gap:0; }
   nav.mainnav a{ display:block; padding: 16px 28px; }
   nav.mainnav a.active::after{ display:none; }
-  nav.mainnav a.active{ background: rgba(232,115,74,0.12); }
+  nav.mainnav a.active{ background: rgba(232,145,109,0.14); }
   .nav-toggle{ display:block; }
 }
 
@@ -162,7 +161,7 @@ nav.mainnav a.active::after{
   content:"";
   position:absolute; inset:-20% -10% auto -10%;
   height: 480px;
-  background: radial-gradient(ellipse at top, rgba(232,115,74,0.16), transparent 65%);
+  background: radial-gradient(ellipse at top, rgba(232,145,109,0.2), transparent 65%);
   pointer-events:none;
 }
 .hero h1{
@@ -202,10 +201,10 @@ nav.mainnav a.active::after{
 .btn.solid{
   background: var(--coral);
   border-color: var(--coral);
-  color: #1A1310;
+  color: #FFFDF8;
   font-weight:700;
 }
-.btn.solid:hover{ background: var(--gold); border-color: var(--gold); color:#1A1310; }
+.btn.solid:hover{ background: var(--gold); border-color: var(--gold); color:#FFFDF8; }
 
 section{ padding: 56px 0; }
 .section-head{
@@ -253,7 +252,7 @@ section{ padding: 56px 0; }
   overflow:hidden;
   margin-bottom: 16px;
 }
-.ticket.new{ border-color: rgba(232,115,74,0.5); }
+.ticket.new{ border-color: rgba(232,145,109,0.6); }
 .ticket .stub{
   background: var(--bg-panel-2);
   border-right: 2px dashed var(--line);
@@ -378,5 +377,5 @@ footer .copyright{
   margin-top: 24px;
   font-family: var(--mono);
   font-size: .7rem;
-  color: rgba(243,233,210,0.4);
+  color: rgba(74,63,51,0.42);
 }
